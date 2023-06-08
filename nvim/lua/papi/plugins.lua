@@ -38,6 +38,8 @@ packer.init({
 	},
 })
 
+
+
 -- --------------------------------------------------------------------------------------
 -- Install your plugins here
 -- --------------------------------------------------------------------------------------
@@ -51,6 +53,21 @@ return packer.startup(function(use)
 
 	-- Colorizer
 	use { "norcalli/nvim-colorizer.lua" }
+
+	-- Cmp
+	use { "hrsh7th/nvim-cmp" }			-- The Completion plugin
+	use { "hrsh7th/cmp-buffer" }		-- Buffer completions
+	use { "hrsh7th/cmp-path" }			-- Path completions
+	use { "hrsh7th/cmp-cmdline" }		-- Command line completions
+	use { "saadparwaiz1/cmp_luasnip"}	-- Snippet completions
+	use { "hrsh7th/cmp-nvim-lua"}		-- Lua completions
+	-- use { "hrsh7th/cmp-nvim-lsp" }
+	-- use { "neovim/nvim-lspconfig" }
+	
+	-- Snippets
+	use { "L3MON4D3/LuaSnip"}				--snippet engine
+	use { "rafamadriz/friendly-snippets"}	-- a bunch of snippets to use
+
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
