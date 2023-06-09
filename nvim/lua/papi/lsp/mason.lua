@@ -70,8 +70,8 @@ local opts = {}
 -- 
 for _, server in pairs(servers) do
 	opts = {
-		capabilities = require("papi.lsp.handlers").capabilities,
 		on_attach = require("papi.lsp.handlers").on_attach,
+		capabilities = require("papi.lsp.handlers").capabilities,
 	}
 
 	-- server = vim.split(server, "@")[1]

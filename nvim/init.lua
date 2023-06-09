@@ -9,4 +9,5 @@ require("papi.telescope")
 require("papi.treesitter")
 require("papi.autopairs")
 require("papi.surround")
+require("papi.comments")
 

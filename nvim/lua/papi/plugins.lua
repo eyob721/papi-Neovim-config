@@ -50,7 +50,6 @@ return packer.startup(function(use)
 	use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}	-- Markdown Preview
 
 	-- Colorschemes
-	use { "catppuccin/nvim", as = "catppuccin" }
 	use { "lunarvim/darkplus.nvim", as = "darkplus"}
 
 	-- Colorizer
@@ -88,6 +87,10 @@ return packer.startup(function(use)
 	-- Autopairs
 	use { "windwp/nvim-autopairs" }						-- Autopairs, integrates with both cmp and treesitter
 	use { 'echasnovski/mini.nvim', branch = 'stable' }	-- Add, delete, replace, find, highlight surrounding (like pair of parenthesis, quotes, etc.)
+
+	-- Comments
+	use { "numToStr/Comment.nvim" }							-- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
+	use { "JoosepAlviste/nvim-ts-context-commentstring" }	-- A Neovim plugin for setting the commentstring option based on the cursor location in the file. The location is checked via treesitter queries.
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
