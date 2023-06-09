@@ -11,4 +11,5 @@ require("papi.autopairs")
 require("papi.surround")
 require("papi.comments")
 require("papi.gitsigns")
+require("papi.nvim_tree")
 

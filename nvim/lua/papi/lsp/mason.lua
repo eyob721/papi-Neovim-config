@@ -1,3 +1,21 @@
+-- ----------------------------------------------------------------------
+-- Add installed servers here
+-- ----------------------------------------------------------------------
+local servers = {
+	"clangd",	-- c and c++
+	"pyright",	-- python
+	"marksman",
+	"html", 	-- html
+	"cssls",	-- css, scss, less
+	"bashls",	-- bash
+	"jsonls",	-- json
+	"lua_ls",
+	-- "tsserver",
+	-- "yamlls",
+}
+-- ----------------------------------------------------------------------
+
+
 -- Use protected call to check if mason is available
 local status_ok, mason = pcall(require, "mason")
 if not status_ok then
@@ -37,22 +55,6 @@ if not lspconfig_status_ok then
 	return
 end
 
--- ----------------------------------------------------------------------
--- Add installed servers here
--- ----------------------------------------------------------------------
-local servers = {
-	"clangd",	-- c and c++
-	"pyright",	-- python
-	"marksman",
-	"html", 	-- html
-	"cssls",	-- css, scss, less
-	"bashls",	-- bash
-	"jsonls",	-- json
-	"lua_ls",
-	-- "tsserver",
-	-- "yamlls",
-}
--- ----------------------------------------------------------------------
 
 local opts = {}
 

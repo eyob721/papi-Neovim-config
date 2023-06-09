@@ -19,7 +19,9 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal ------------------------------------------------
-keymap("n", "<leader>e", ":Lex 30<CR>", opts)		-- Open file explorer
+-- keymap("n", "<leader>e", ":Lex 30<CR>", opts)		-- Open OLD file explorer
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)		-- Open Nvim-tree file explorer
+keymap("n", "<C-b>", ":NvimTreeFocus<CR>", opts)		-- Open Nvim-tree file explorer
 keymap("n", "<leader>w", ":set list!<CR>", opts)	-- Toggle whitespaces
 
 -- Better window navigation
@@ -64,8 +66,8 @@ keymap("v", "p", '"_dP', opts)
 
 -- Telescope
 -- keymap("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files(require ('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
-keymap("n", "<leader>f", "<cmd>Telescope find_files<CR>", opts)
-keymap("n", "<C-t>", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 
 -- ------------------------------------------------------------------------
 -- Moving text up and down [hjkl] -----------------------------------------

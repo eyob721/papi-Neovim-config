@@ -95,6 +95,10 @@ return packer.startup(function(use)
 	-- Git
 	use { "lewis6991/gitsigns.nvim" }			-- Git integration for buffers
 
+	-- File Explorer (Nvim-tree)
+	use { "nvim-tree/nvim-tree.lua" }			-- A file explorer tree for neovim written in lua
+	use { "nvim-tree/nvim-web-devicons" }		-- Used to display file icons
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
