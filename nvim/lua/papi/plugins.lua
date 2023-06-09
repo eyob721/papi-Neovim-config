@@ -92,6 +92,9 @@ return packer.startup(function(use)
 	use { "numToStr/Comment.nvim" }							-- Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
 	use { "JoosepAlviste/nvim-ts-context-commentstring" }	-- A Neovim plugin for setting the commentstring option based on the cursor location in the file. The location is checked via treesitter queries.
 
+	-- Git
+	use { "lewis6991/gitsigns.nvim" }			-- Git integration for buffers
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

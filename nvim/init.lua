@@ -10,4 +10,5 @@ require("papi.treesitter")
 require("papi.autopairs")
 require("papi.surround")
 require("papi.comments")
+require("papi.gitsigns")
 
