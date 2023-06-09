@@ -17,7 +17,7 @@ local options = {
 	splitright = true,                       -- force all vertical splits to go to the right of current window
 	swapfile = false,                        -- creates a swapfile
 	termguicolors = true,                    -- set term gui colors (most terminals support this)
-	timeoutlen = 300,                        -- time to wait for a mapped sequence to complete (in milliseconds)
+	-- timeoutlen = 300,                        -- time to wait for a mapped sequence to complete (in milliseconds)
 	undofile = true,                         -- enable persistent undo
 	updatetime = 300,                        -- faster completion (4000ms default)
 	writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
@@ -34,8 +34,9 @@ local options = {
 	scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
 	sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
 	guifont = "monospace:h17",			-- the font used in graphical neovim applications
-	list = false,						-- shows whitespaces
-	listchars = "tab:🡢 ,trail:·,extends:>,precedes:<,space:·"
+	list = true,						-- shows whitespaces
+	listchars = "tab:~ ,trail:·,extends:>,precedes:<,space:·"
+	-- listchars = "tab:🡢 ,trail:·,extends:>,precedes:<,space:·"
 	-- whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
 }
 
