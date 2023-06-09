@@ -6,4 +6,5 @@ require("papi.colorizer")
 require("papi.cmp")
 require("papi.lsp")
 require("papi.telescope")
+require("papi.treesitter")
 

@@ -82,6 +82,9 @@ return packer.startup(function(use)
 	use { "nvim-telescope/telescope.nvim" }				-- a highly extendable fuzzy finder over lists.
 	use { 'nvim-telescope/telescope-media-files.nvim' }	-- Telescope extension to preview media files using Ueberzug.
 
+	-- Treesitter
+	use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
