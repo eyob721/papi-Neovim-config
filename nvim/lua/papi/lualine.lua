@@ -59,7 +59,12 @@ local progress = function()
 end
 
 local spaces = function()
-	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+	is_spaces = vim.api.nvim_buf_get_option(0, "expandtab")
+	if is_spaces then
+		return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+	else
+		return "tabs: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+	end
 end
 
 lualine.setup({
