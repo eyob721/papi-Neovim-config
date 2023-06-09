@@ -62,24 +62,52 @@ keymap("v", "p", '"_dP', opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- Telescope
+-- keymap("n", "<C-p>", "<cmd>lua require('telescope.builtin').find_files(require ('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
+keymap("n", "<C-p>", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<C-t>", "<cmd>Telescope live_grep<CR>", opts)
 
-
--- Moving text up and down ------------------------------------------------
--- Move text up and down (Normal mode)
+-- ------------------------------------------------------------------------
+-- Moving text up and down [hjkl] -----------------------------------------
+-- ------------------------------------------------------------------------
+-- (Normal mode)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts) -- keymap("n", "<A-Up>", "<Esc>:m-2<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts) -- keymap("n", "<A-Down>", "<Esc>:m+<CR>", opts)
 
--- Move text up and down (Insert mode)
-keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts) 
+-- (Insert mode)
+keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("i", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 
--- Move text up and down (Visual mode)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts) 
+-- (Visual mode)
+keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 
--- Move text up and down (Visual Block Mode)
+-- (Visual Block Mode)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts) -- keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts) -- keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
+-- ------------------------------------------------------------------------
+
+
+-- ------------------------------------------------------------------------
+-- Moving text up and down [Arrow Keys] -----------------------------------
+-- ------------------------------------------------------------------------
+-- (Normal mode)
+keymap("n", "<A-Up>", "<Esc>:m .-2<CR>==", opts) -- keymap("n", "<A-Up>", "<Esc>:m-2<CR>", opts)
+keymap("n", "<A-Down>", "<Esc>:m .+1<CR>==", opts) -- keymap("n", "<A-Down>", "<Esc>:m+<CR>", opts)
+
+-- (Insert mode)
+keymap("i", "<A-Up>", "<Esc>:m .-2<CR>==gi", opts)
+keymap("i", "<A-Down>", "<Esc>:m .+1<CR>==gi", opts)
+
+-- (Visual mode)
+keymap("v", "<A-Up>", ":m .-2<CR>==", opts)
+keymap("v", "<A-Down>", ":m .+1<CR>==", opts)
+
+-- (Visual Block Mode)
+keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts) -- keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts) -- keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
+-- ------------------------------------------------------------------------
+
 
 
 
