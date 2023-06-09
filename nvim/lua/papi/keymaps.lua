@@ -63,8 +63,8 @@ keymap("v", "p", '"_dP', opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Telescope
--- keymap("n", "<C-p>", "<cmd>lua require('telescope.builtin').find_files(require ('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
-keymap("n", "<C-p>", "<cmd>Telescope find_files<CR>", opts)
+-- keymap("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files(require ('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 keymap("n", "<C-t>", "<cmd>Telescope live_grep<CR>", opts)
 
 -- ------------------------------------------------------------------------

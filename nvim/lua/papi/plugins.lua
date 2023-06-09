@@ -44,8 +44,10 @@ packer.init({
 -- Install your plugins here
 -- --------------------------------------------------------------------------------------
 return packer.startup(function(use)
+	-- General
 	use { "wbthomason/packer.nvim" }	-- Have packer manage itself
 	use { "nvim-lua/plenary.nvim" }		-- Useful lua functions used by lots of plugins
+	use { 'nvim-lua/popup.nvim' }		-- An implementation of the Popup API from vim in Neovim
 	use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}	-- Markdown Preview
 
 	-- Colorschemes
@@ -77,8 +79,8 @@ return packer.startup(function(use)
 	use { "rafamadriz/friendly-snippets"}	-- a bunch of snippets to use
 
 	-- Telescope
-	use { "nvim-telescope/telescope.nvim" }	-- a highly extendable fuzzy finder over lists.
-
+	use { "nvim-telescope/telescope.nvim" }				-- a highly extendable fuzzy finder over lists.
+	use { 'nvim-telescope/telescope-media-files.nvim' }	-- Telescope extension to preview media files using Ueberzug.
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
