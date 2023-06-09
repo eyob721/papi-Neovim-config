@@ -39,7 +39,6 @@ packer.init({
 })
 
 
-
 -- --------------------------------------------------------------------------------------
 -- Install your plugins here
 -- --------------------------------------------------------------------------------------
@@ -84,6 +83,10 @@ return packer.startup(function(use)
 
 	-- Treesitter
 	use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+	-- use { "eyob721/nvim-ts-rainbow" }
+
+	-- Autopairs
+	use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

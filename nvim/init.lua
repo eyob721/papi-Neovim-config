@@ -7,4 +7,5 @@ require("papi.cmp")
 require("papi.lsp")
 require("papi.telescope")
 require("papi.treesitter")
+require("papi.autopairs")
 
