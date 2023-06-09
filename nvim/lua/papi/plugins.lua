@@ -86,7 +86,8 @@ return packer.startup(function(use)
 	-- use { "eyob721/nvim-ts-rainbow" }
 
 	-- Autopairs
-	use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
+	use { "windwp/nvim-autopairs" }						-- Autopairs, integrates with both cmp and treesitter
+	use { 'echasnovski/mini.nvim', branch = 'stable' }	-- Add, delete, replace, find, highlight surrounding (like pair of parenthesis, quotes, etc.)
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
