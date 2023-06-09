@@ -37,9 +37,21 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<C-PageDown>", ":bnext<CR>", opts)
+keymap("n", "<C-PageUp>", ":bprevious<CR>", opts)
 
+keymap("n", "<A-1>", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
+keymap("n", "<A-2>", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
+keymap("n", "<A-3>", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
+keymap("n", "<A-4>", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
+keymap("n", "<A-5>", "<Cmd>BufferLineGoToBuffer 5<CR>", opts)
+keymap("n", "<A-6>", "<Cmd>BufferLineGoToBuffer 6<CR>", opts)
+keymap("n", "<A-7>", "<Cmd>BufferLineGoToBuffer 7<CR>", opts)
+keymap("n", "<A-8>", "<Cmd>BufferLineGoToBuffer 8<CR>", opts)
+keymap("n", "<A-9>", "<Cmd>BufferLineGoToBuffer 9<CR>", opts)
+
+-- Closing buffers (closing a file or a tab, without exiting vim)
+keymap("n", "<C-w>", "<Cmd>Bdelete<CR>", opts)
 
 -- Insert ------------------------------------------------ 
 -- Press jk fast to exit insert mode 

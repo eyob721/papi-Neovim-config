@@ -99,6 +99,10 @@ return packer.startup(function(use)
 	use { "nvim-tree/nvim-tree.lua" }			-- A file explorer tree for neovim written in lua
 	use { "nvim-tree/nvim-web-devicons" }		-- Used to display file icons
 
+	-- Bufferline
+	use { "akinsho/bufferline.nvim" }		-- A snazzy bufferline for Neovim
+	use { "moll/vim-bbye" }					-- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
