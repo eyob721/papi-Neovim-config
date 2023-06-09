@@ -53,7 +53,8 @@ return packer.startup(function(use)
 	use { "lunarvim/darkplus.nvim", as = "darkplus"}
 
 	-- Colorizer
-	use { "norcalli/nvim-colorizer.lua" }
+	-- use { "norcalli/nvim-colorizer.lua" }
+	use { 'NvChad/nvim-colorizer.lua' }
 
 	-- Cmp
 	use { "hrsh7th/nvim-cmp" }			-- The Completion plugin
