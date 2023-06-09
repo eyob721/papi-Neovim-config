@@ -106,6 +106,10 @@ return packer.startup(function(use)
 	-- Lualine
 	use { 'nvim-lualine/lualine.nvim' }		-- A blazing fast and easy to configure Neovim statusline written in Lua.
 
+	-- Toggle Terminal
+	use {"akinsho/toggleterm.nvim" }		-- A neovim lua plugin to help easily manage multiple terminal windows
+
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

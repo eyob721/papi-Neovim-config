@@ -58,7 +58,7 @@ local progress = function()
 	return chars[index]
 end
 
-local spaces = function()
+local indentation = function()
 	is_spaces = vim.api.nvim_buf_get_option(0, "expandtab")
 	if is_spaces then
 		return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
@@ -81,7 +81,7 @@ lualine.setup({
 		lualine_b = { mode },
 		lualine_c = {},
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_x = { diff, spaces, "encoding", filetype },
+		lualine_x = { diff, indentation, "encoding", filetype },
 		lualine_y = { location },
 		lualine_z = { progress },
 	},
