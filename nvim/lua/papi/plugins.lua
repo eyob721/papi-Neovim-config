@@ -103,6 +103,9 @@ return packer.startup(function(use)
 	use { "akinsho/bufferline.nvim" }		-- A snazzy bufferline for Neovim
 	use { "moll/vim-bbye" }					-- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
 
+	-- Lualine
+	use { 'nvim-lualine/lualine.nvim' }		-- A blazing fast and easy to configure Neovim statusline written in Lua.
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
