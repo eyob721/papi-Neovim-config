@@ -51,6 +51,7 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use { "lunarvim/darkplus.nvim", as = "darkplus"}
+	use { "ribru17/bamboo.nvim", as = "bamboo" }
 
 	-- Colorizer
 	-- use { "norcalli/nvim-colorizer.lua" }

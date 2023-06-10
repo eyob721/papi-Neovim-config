@@ -59,7 +59,7 @@ local progress = function()
 end
 
 local indentation = function()
-	is_spaces = vim.api.nvim_buf_get_option(0, "expandtab")
+	local is_spaces = vim.api.nvim_buf_get_option(0, "expandtab")
 	if is_spaces then
 		return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 	else

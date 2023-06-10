@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/eyob721/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  bamboo = {
+    loaded = true,
+    path = "/home/eyob721/.local/share/nvim/site/pack/packer/start/bamboo",
+    url = "https://github.com/ribru17/bamboo.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/eyob721/.local/share/nvim/site/pack/packer/start/bufferline.nvim",

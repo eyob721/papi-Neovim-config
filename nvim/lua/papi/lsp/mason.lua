@@ -2,7 +2,6 @@
 -- Add installed servers here
 -- ----------------------------------------------------------------------
 local servers = {
-	"ccls",		-- c and c++
 	"clangd",	-- c and c++
 	"pyright",	-- python
 	"marksman",
