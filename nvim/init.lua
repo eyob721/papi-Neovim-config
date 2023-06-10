@@ -15,4 +15,5 @@ require("papi.nvim_tree")
 require("papi.bufferline")
 require("papi.lualine")
 require("papi.toggleterm")
+require("papi.indent_blankline")
 

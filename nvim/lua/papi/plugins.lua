@@ -107,6 +107,9 @@ return packer.startup(function(use)
 	-- Lualine
 	use { 'nvim-lualine/lualine.nvim' }		-- A blazing fast and easy to configure Neovim statusline written in Lua.
 
+	-- Indent balnkline
+	use ( "lukas-reineke/indent-blankline.nvim" )	-- Indent guides for Neovim
+
 	-- Toggle Terminal
 	use {"akinsho/toggleterm.nvim" }		-- A neovim lua plugin to help easily manage multiple terminal windows
 
