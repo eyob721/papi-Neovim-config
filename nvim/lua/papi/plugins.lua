@@ -113,6 +113,8 @@ return packer.startup(function(use)
 	-- Toggle Terminal
 	use {"akinsho/toggleterm.nvim" }		-- A neovim lua plugin to help easily manage multiple terminal windows
 
+	-- Greeter for neovim
+	use { "goolord/alpha-nvim" }		-- a fast and fully programmable greeter for neovim.
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
