@@ -100,7 +100,7 @@ cmp.setup {
 	"i",
 	"s",
 	}),
-},
+	},
 	formatting = {
 		fields = { "kind", "abbr", "menu" },
 		format = function(entry, vim_item)
@@ -112,15 +112,17 @@ cmp.setup {
 				luasnip = "[Snippet]",
 				buffer = "[Buffer]",
 				path = "[Path]",
+				nvim_lua = "[NVIM_LUA]",
 			})[entry.source.name]
 			return vim_item
 		end,
 	},
 	sources = {
-		{ name = "nvim_lsp" },
-		{ name = "luasnip" },
-		{ name = "buffer" },
-		{ name = "path" },
+		{ name = "nvim_lsp" },	-- cmp-nvim-lsp [LSP Completions]
+		{ name = "luasnip" },	-- cmp-luasnip [Snippets Completions]
+		{ name = "buffer" },	-- cmp-cmdline [Completions for / search based on current buffer:]
+		{ name = "path" },		-- cmp-cmdline [Completions for command mode:]
+		{ name = "nvim_lua" },
 	},
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,

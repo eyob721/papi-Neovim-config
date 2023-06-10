@@ -65,7 +65,7 @@ local function lsp_keymaps(bufnr)
 	local keymap = vim.api.nvim_buf_set_keymap
 	keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)	-- Jumps to the declaration of the symbol under the cursor
 	keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)		-- Jumps to the definition of the symbol under the cursor.
-	keymap(bufnr, "n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)			--  Displays hover information about the symbol under the cursor in a floating window
+	keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)			--  Displays hover information about the symbol under the cursor in a floating window
 	keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)	-- Lists all the implementations for the symbol under the cursor in the quickfix window.
 	keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)		-- Lists all the references to the symbol under the cursor in the quickfix window.
 	keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)	-- Show diagnostics in a floating window.
