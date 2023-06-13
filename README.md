@@ -1,1 +1,1 @@
-# Papi - Neovim config
+# Chris - Neovim Configuration
